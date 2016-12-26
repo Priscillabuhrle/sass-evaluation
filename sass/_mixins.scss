@@ -1,0 +1,39 @@
+@mixin cuadradoicono($fondo, $width, $padt, $padi, $padd, $padb, $marg, $color) {
+	background-color: $fondo;
+	width: $width;
+	padding-top:$padt;
+	padding-left: $padi;
+	padding-right:$padd;
+	padding-bottom:$padb;
+	margin-top: $marg;
+	color: $color;
+}
+@mixin texto ($color, $tam, $grosor, $padl, $padr, $martop, $margbot){
+    color: $color;
+	font-size: $tam;
+	font-weight:$grosor;
+	padding-left:$padl;
+	padding-right:$padr;
+	margin-top:$martop;
+	margin-bottom:$margbot;
+}
+@mixin fondofoto ($png, $alt, $marg, $margleft, $anch, $rep, $cov){
+	background-image:$png;
+	height:$alt;
+	margin-top:$marg;
+    margin-left: $margleft;
+	max-width: $anch;
+	background-repeat: $rep;
+	background-size: $cov;
+}
+@mixin fotosegundafila ($alt, $marg, $margb, $margleft, $anch){
+	height:$alt;
+	margin-top:$marg;
+	margin-bottom:$margb;
+    margin-left: $margleft;
+	max-width: $anch;
+}
+@mixin flotante ($lef, $tam){
+	float: $lef;
+	margin-right: $tam;
+}

@@ -1,0 +1,111 @@
+
+section{
+	h1{
+		font-size: 50px;
+		float: left; 
+		span{
+			color: $rojo;
+			font-size:90px;
+		}
+	}
+    .nav-wrapper {
+	    background-color: white;
+	    a{
+		    color: $negro;
+		    font-size: 15px;
+	    }
+	    .material-icons{
+		    color: $negro;
+	    }
+    }
+}
+//cajas
+.box-rojo{
+	@include cuadradoicono($rojo, 90px, 0px, 20px, 0px, 0px, 0px, $blanco);
+}
+.btn-primary {
+     @include cuadradoicono($rojo, 35px, 0px, 5px, 5px, 0px, 0px, $blanco);
+}
+#btn-izqu{
+	@include cuadradoicono($gris, 35px, 0px, 0px, 5px, 0px, 0px, $blanco);
+}
+.box1{
+	@include fondofoto (url("../img/1.png"), 300px, 0px, 0px, 100%, no-repeat, cover);
+}
+.box-2{
+	@include fondofoto (url("../img/6.png"), 190px, 0px, 0px, 100%, no-repeat, cover);
+}
+.box-3{
+	@include fondofoto (url("../img/13.png"), 98px, -20px, -10px, 112%, no-repeat, cover);
+}
+.box-4{
+	@include fondofoto (url("../img/fam.png"), 98px, -20px, 10px, 150%, no-repeat, cover);
+}
+.box11{
+	@include cuadradoicono ($opaco, 100%, 10px, 20px, 0px, 20px,87px, $blanco);
+}
+.box111{
+	@include cuadradoicono ($opaco, 100%, 5px, 20px, 0px, 5px, 55px, $blanco);
+}
+.box1111{
+	@include cuadradoicono ($opaco, 100%, 0px, 20px, 0px, 0px, 30px, $blanco);
+}
+.fondoimg{
+	@include fondofoto (url("../img/8tres.png"), 190px, 0px, 0px, 100%, no-repeat, cover);
+}
+.fondoimg2{
+	@include fondofoto (url("../img/8seis.png"), 190px, 0px, 0px, 100%, no-repeat, cover);
+}
+//textos
+.tit-3{
+	@include texto ($grisss, 17px, 600, 0px, 0px, 20px, 10px);
+}
+.textfecha{
+	@include texto ($rojo, 12px, 600, 5px, 0px, 10px, 0px);
+}
+.textfoto{
+	@include texto ($gris, 12px, 600, 5px, 0px, 0px, 0px);
+}
+.txtgrismediano{
+	@include texto ($gris, 15px, 400, 4px, 0px, 0px, 10px);
+}
+.txtgrismedianoo{
+	@include texto ($grisss, 15px, 600, 5px, 0px, 5px, 5px);
+}
+.textfechag{
+	@include texto ($rojo, 12px, 400, 0px, 0px, 0px, 5px);
+}
+//estrellas
+.est{
+   @include texto ($rojo, 12px, 600, 0px, 0px, 0px, 0px);
+}
+.estrgris{
+	@include texto ($gris, 12px, 600, 0px, 0px, 0px, 0px);
+}
+//img
+.fotocomun{
+	@include fotosegundafila (80px, 0px, 0px, 0px, 140px);
+}
+.fotomediana{
+	@include fotosegundafila (190px, 0px, 0px,  0px, 340px);
+}
+.cuarteto{
+	@include fotosegundafila (130px, 0px, 0px,  0px, 130px);
+}
+.redes{
+	@include fotosegundafila (90px, 0px, 0px, 0px, 90px);
+}
+.personas{
+	@include fotosegundafila (60px, 0px, -15px, 0px, 60px);
+}
+.fotofooter{
+	@include fotosegundafila (90px, 0px, 0px, 0px, 90px);
+}
+//redes sociales y detalles
+.textredes{ 
+	background-color: $grisclaro;
+}
+.float{
+	@include flotante (left, 20px);
+}
+
